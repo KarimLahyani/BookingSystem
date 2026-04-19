@@ -57,10 +57,10 @@
       let summaryCol = '';
       if (index === 0) {
         summaryCol = `
-        <td style="vertical-align: middle; background-color:#ffffff;" rowspan="${hotel.roomTypes.length}" id="summaryCellContainer">
+        <td class="room-summary-cell" rowspan="${hotel.roomTypes.length}" id="summaryCellContainer">
           <div id="cartSummary" class="cart-summary-card">
-            <div style="width:100%;">
-              <div style="margin-bottom: 10px;">
+            <div class="w-full">
+              <div class="mb-10">
                 <label class="summary-date-label">Check-in</label>
                 <input type="date" id="summaryCheckIn" class="form-control form-control-sm" value="${searchData.checkInDate}" required>
               </div>
@@ -70,7 +70,7 @@
               </div>
             </div>
             <div class="summary-rooms-label" id="cartHeading">0 Room(s) &bull; 0 Guest(s)</div>
-            <div style="width:100%; text-align:center;">
+            <div class="summary-footer-box">
               <div class="summary-price-label">Total Price</div>
               <div class="summary-total-price">₺ <span id="cartTotalPrice">0</span></div>
               <div class="summary-tax-note">All taxes included</div>
@@ -125,14 +125,14 @@
     }).join("");
 
     section.innerHTML = `
-      <table class="table room-selection-table" style="background-color:#ffffff;">
+      <table class="table room-selection-table bg-white-table">
           <tr>
-            <th class="text-center room-reservation-th">Room Type</th>
-            <th class="text-center room-reservation-th">Conditions</th>
-            <th class="text-center room-reservation-th">Guests</th>
-            <th class="text-center room-reservation-th">Price per Night</th>
-            <th class="text-center room-reservation-th">Select Rooms</th>
-            <th class="text-center room-reservation-th">Summary</th>
+            <th class="text-center room-reservation-th" style="width: 35%;">Room Type</th>
+            <th class="text-center room-reservation-th" style="width: 10%;">Conditions</th>
+            <th class="text-center room-reservation-th" style="width: 10%;">Guests</th>
+            <th class="text-center room-reservation-th" style="width: 15%;">Price per Night</th>
+            <th class="text-center room-reservation-th" style="width: 5%;">Select Rooms</th>
+            <th class="text-center room-reservation-th" style="width: 20%;">Summary</th>
           </tr>
           ${roomRows}
 
@@ -312,7 +312,7 @@
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
               </svg>
             </button>
-            <button id="showRoomSelectionButton" class="btn btn-primary px-4 py-2 ms-2 fw-bold" style="border-radius: 8px; font-size: 1rem;" type="button">Book now</button>
+            <button id="showRoomSelectionButton" class="btn btn-primary px-4 py-2 ms-2 fw-bold btn-book-now-header" type="button">Book now</button>
           </div>
         </div>
 
