@@ -31,41 +31,39 @@
     `;
   }
 
-  function handleSubmit(selectedHotel, iti) {
+  function isCardExpired(value) {
+    if (!value || !value.includes("/")) return true;
+    const parts = value.split("/");
+    if (parts.length !== 2) return true;
+    const m = parseInt(parts[0], 10);
+    const y = parseInt(parts[1], 10);
+    if (isNaN(m) || isNaN(y) || m < 1 || m > 12) return true;
+    const now = new Date();
+    const curYear = now.getFullYear() % 100;
+    const curMonth = now.getMonth() + 1;
+    if (y < curYear) return true;
+    if (y === curYear && m < curMonth) return true;
+    return false;
+  }
+
+  function handleSubmit(selectedHotel) {
     const form = document.getElementById("paymentForm");
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+
+      const expiryInput = form.expiryDate;
+      if (isCardExpired(expiryInput.value)) {
+        expiryInput.setCustomValidity("Card expiry date is invalid or expired.");
+      } else {
+        expiryInput.setCustomValidity("");
+      }
+
       form.classList.add("was-validated");
 
-      // Validate Expiry Date
-      const expiryInput = form.expiryDate;
-      const expiryValue = expiryInput.value;
-      const isExpired = (value) => {
-        if (!value || !value.includes("/")) return true;
-        const [m, y] = value.split("/").map(Number);
-        const now = new Date();
-        const curM = now.getMonth() + 1;
-        const curY = now.getFullYear() % 100;
-        if (y < curY) return true;
-        if (y === curY && m < curM) return true;
-        return false;
-      };
-
-      if (isExpired(expiryValue)) {
-          expiryInput.setCustomValidity("Card is expired.");
-      } else {
-          expiryInput.setCustomValidity("");
-      }
-
-      if (!form.checkValidity() || !iti.isValidNumber()) {
-        if (!iti.isValidNumber()) {
-            form.phone.classList.add("is-invalid");
-        }
+      if (!form.checkValidity()) {
         return;
       }
-
-      form.phone.classList.remove("is-invalid");
 
       const reservationData = selectedHotel.reservationData;
       const totalAmount = reservationData.totalPrice || calculateTotalAmount(selectedHotel, reservationData);
@@ -87,7 +85,7 @@
           "firstName": form.firstName.value.trim(),
           "lastName": form.lastName.value.trim(),
           "email": form.email.value.trim(),
-          "phone": iti.getNumber()
+          "phone": form.phone.value.trim()
         },
         "paymentInformation": {
           "cardInfo": {
@@ -106,7 +104,31 @@
 
       form.reset();
       form.classList.remove("was-validated");
-      window.alert("Booking completed successfully.");
+      window.alert("Booking completed successfully! Your reservation has been saved.");
+    });
+  }
+
+  function enforceNumericInput(fieldId, maxLength) {
+    const field = document.getElementById(fieldId);
+    if (!field) return;
+    field.addEventListener("input", function () {
+      this.value = this.value.replace(/\D/g, "");
+      if (maxLength && this.value.length > maxLength) {
+        this.value = this.value.slice(0, maxLength);
+      }
+    });
+  }
+
+  function formatExpiryInput(input) {
+    input.addEventListener("input", function () {
+      let raw = this.value.replace(/\D/g, "");
+      if (raw.length > 4) raw = raw.slice(0, 4);
+      if (raw.length >= 3) {
+        this.value = raw.slice(0, 2) + "/" + raw.slice(2);
+      } else {
+        this.value = raw;
+      }
+      this.setCustomValidity("");
     });
   }
 
@@ -125,51 +147,14 @@
     }
 
     renderSummary(selectedHotel);
+    handleSubmit(selectedHotel);
 
-    const paymentForm = document.getElementById("paymentForm");
-    const phoneInput = document.querySelector("#phone");
-    const iti = window.intlTelInput(phoneInput, {
-      initialCountry: "tr",
-      separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
+    enforceNumericInput("cardNumber", 16);
+    enforceNumericInput("cvc", 3);
 
-    handleSubmit(selectedHotel, iti);
-
-    // Restrict input to numbers only for specific fields
-    const numberFields = ["cardNumber", "cvc"];
-    numberFields.forEach((fieldId) => {
-      const field = document.getElementById(fieldId);
-      field.addEventListener("input", function (event) {
-        this.value = this.value.replace(/\D/g, "");
-      });
-    });
-
-    // Limit input length for phone and CVC fields
-    phoneInput.addEventListener("input", function () {
-      if (this.value.length > 10) {
-        this.value = this.value.slice(0, 10);
-      }
-    });
-
-    const cvcInput = document.querySelector("#cvc");
-    if (cvcInput) {
-        cvcInput.addEventListener("input", function () {
-          if (this.value.length > 3) {
-            this.value = this.value.slice(0, 3);
-          }
-        });
+    const expiryInput = document.getElementById("expiryDate");
+    if (expiryInput) {
+      formatExpiryInput(expiryInput);
     }
-
-    // Initialize datepicker for expiration date
-    const expiryDateInput = document.querySelector("#expiryDate");
-    $(expiryDateInput).datepicker({
-      format: "mm/yy",
-      startView: "months",
-      minViewMode: "months",
-      autoclose: true,
-    }).on("changeDate change", function() {
-        this.setCustomValidity("");
-    });
   });
 }());

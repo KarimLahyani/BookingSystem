@@ -53,9 +53,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Standard Room", multiplier: 1 },
-        { name: "Deluxe Room", multiplier: 1.2 },
-        { name: "Family Suite", multiplier: 1.45 }
+        { name: "Standard Room", multiplier: 1, guestCount: 2 },
+        { name: "Deluxe Room", multiplier: 1.2, guestCount: 2 },
+        { name: "Family Suite", multiplier: 1.45, guestCount: 4 }
       ]
     },
     {
@@ -82,9 +82,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Economy Room", multiplier: 1 },
-        { name: "Sea View Room", multiplier: 1.15 },
-        { name: "Junior Suite", multiplier: 1.35 }
+        { name: "Economy Room", multiplier: 1, guestCount: 1 },
+        { name: "Sea View Room", multiplier: 1.15, guestCount: 2 },
+        { name: "Junior Suite", multiplier: 1.35, guestCount: 3 }
       ]
     },
     {
@@ -111,9 +111,9 @@
         "Small pets are allowed on request."
       ],
       roomTypes: [
-        { name: "Standard Room", multiplier: 1 },
-        { name: "Superior Room", multiplier: 1.18 },
-        { name: "Executive Suite", multiplier: 1.5 }
+        { name: "Standard Room", multiplier: 1, guestCount: 2 },
+        { name: "Superior Room", multiplier: 1.18, guestCount: 2 },
+        { name: "Executive Suite", multiplier: 1.5, guestCount: 4 }
       ]
     },
     {
@@ -140,9 +140,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Single Room", multiplier: 1 },
-        { name: "Double Room", multiplier: 1.1 },
-        { name: "Family Room", multiplier: 1.3 }
+        { name: "Single Room", multiplier: 1, guestCount: 1 },
+        { name: "Double Room", multiplier: 1.1, guestCount: 2 },
+        { name: "Family Room", multiplier: 1.3, guestCount: 4 }
       ]
     },
     {
@@ -169,9 +169,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Stone Room", multiplier: 1 },
-        { name: "Cave Suite", multiplier: 1.22 },
-        { name: "Panoramic Suite", multiplier: 1.48 }
+        { name: "Stone Room", multiplier: 1, guestCount: 2 },
+        { name: "Cave Suite", multiplier: 1.22, guestCount: 2 },
+        { name: "Panoramic Suite", multiplier: 1.48, guestCount: 4 }
       ]
     },
     {
@@ -198,9 +198,9 @@
         "Pets are allowed on request."
       ],
       roomTypes: [
-        { name: "Classic Room", multiplier: 1 },
-        { name: "Deluxe Cave Room", multiplier: 1.2 },
-        { name: "Terrace Suite", multiplier: 1.4 }
+        { name: "Classic Room", multiplier: 1, guestCount: 2 },
+        { name: "Deluxe Cave Room", multiplier: 1.2, guestCount: 2 },
+        { name: "Terrace Suite", multiplier: 1.4, guestCount: 3 }
       ]
     },
     {
@@ -227,9 +227,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Standard Room", multiplier: 1 },
-        { name: "Corner Room", multiplier: 1.14 },
-        { name: "Suite", multiplier: 1.36 }
+        { name: "Standard Room", multiplier: 1, guestCount: 2 },
+        { name: "Corner Room", multiplier: 1.14, guestCount: 2 },
+        { name: "Suite", multiplier: 1.36, guestCount: 4 }
       ]
     },
     {
@@ -256,9 +256,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Garden Room", multiplier: 1 },
-        { name: "Sea View Room", multiplier: 1.18 },
-        { name: "Family Suite", multiplier: 1.44 }
+        { name: "Garden Room", multiplier: 1, guestCount: 2 },
+        { name: "Sea View Room", multiplier: 1.18, guestCount: 2 },
+        { name: "Family Suite", multiplier: 1.44, guestCount: 4 }
       ]
     },
     {
@@ -285,9 +285,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Business Room", multiplier: 1 },
-        { name: "Superior Room", multiplier: 1.17 },
-        { name: "Executive Room", multiplier: 1.32 }
+        { name: "Business Room", multiplier: 1, guestCount: 1 },
+        { name: "Superior Room", multiplier: 1.17, guestCount: 2 },
+        { name: "Executive Room", multiplier: 1.32, guestCount: 2 }
       ]
     },
     {
@@ -314,9 +314,9 @@
         "Pets are allowed on request."
       ],
       roomTypes: [
-        { name: "Standard Room", multiplier: 1 },
-        { name: "Lake View Room", multiplier: 1.16 },
-        { name: "Family Suite", multiplier: 1.38 }
+        { name: "Standard Room", multiplier: 1, guestCount: 2 },
+        { name: "Lake View Room", multiplier: 1.16, guestCount: 2 },
+        { name: "Family Suite", multiplier: 1.38, guestCount: 4 }
       ]
     },
     {
@@ -343,9 +343,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Garden Room", multiplier: 1 },
-        { name: "Pool View Room", multiplier: 1.14 },
-        { name: "Junior Suite", multiplier: 1.34 }
+        { name: "Garden Room", multiplier: 1, guestCount: 2 },
+        { name: "Pool View Room", multiplier: 1.14, guestCount: 2 },
+        { name: "Junior Suite", multiplier: 1.34, guestCount: 3 }
       ]
     },
     {
@@ -372,9 +372,9 @@
         "Pets are not allowed."
       ],
       roomTypes: [
-        { name: "Single Room", multiplier: 1 },
-        { name: "Double Room", multiplier: 1.08 },
-        { name: "Triple Room", multiplier: 1.22 }
+        { name: "Single Room", multiplier: 1, guestCount: 1 },
+        { name: "Double Room", multiplier: 1.08, guestCount: 2 },
+        { name: "Triple Room", multiplier: 1.22, guestCount: 3 }
       ]
     }
   ];

@@ -10,6 +10,7 @@
     const deals = getDeals();
 
     heading.textContent = "Deals and Discounts";
+    subheading.textContent = "Exclusive offers and seasonal promotions for your next stay.";
     link.classList.add("d-none");
 
     container.innerHTML = renderCardCarousel("dealsCarousel", deals, function (deal) {
