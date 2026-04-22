@@ -51,7 +51,7 @@
       return;
     }
 
-    const slides = buildSlides(results, 4);
+    const slides = buildSlides(results, 5);
     const indicatorsMarkup = slides.map((_, index) => `
       <button type="button" data-bs-target="#searchPreviewCarousel" data-bs-slide-to="${index}" class="${index === 0 ? "active" : ""}" aria-label="Slide ${index + 1}"></button>
     `).join("");
@@ -180,11 +180,13 @@
   document.addEventListener("DOMContentLoaded", function () {
     seedSessionData();
 
+    const currentSearch = getCurrentSearch();
     const defaultSearchState = getDefaultSearchState();
     
-    // Clear the search fields and results whenever the user navigates back to index.html
-    window.HotelAppCommon.saveCurrentSearch(defaultSearchState);
-    window.HotelAppCommon.saveSearchResults([]);
+    // If no search state exists, use default
+    if (!currentSearch || !currentSearch.searchText) {
+        saveCurrentSearch(defaultSearchState);
+    }
 
     renderPopularSearches();
     renderDealsSection();
