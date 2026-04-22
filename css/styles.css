@@ -537,19 +537,6 @@ header.bg-primary {
 #lightboxPrevBtn { left: -30px; }
 #lightboxNextBtn { right: -30px; }
 
-/* --- Empty State --- */
-.empty-state {
-  text-align: center;
-  padding: 3rem 1rem;
-  color: var(--text-muted);
-}
-
-.empty-state .h4,
-.empty-state .h5 {
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
-}
-
 /* --- Utility Classes --- */
 .btn-back-circle {
   width: 40px;
