@@ -117,6 +117,40 @@ header.bg-primary {
   min-width: 0;
 }
 
+.search-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input-container .search-bar-input {
+  padding-right: 32px !important;
+}
+
+.clear-search-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #94a3b8;
+  padding: 4px;
+  cursor: pointer;
+  display: none;
+  line-height: 1;
+  font-size: 1.2rem;
+  z-index: 5;
+  transition: color 0.2s ease;
+}
+
+.clear-search-btn:hover {
+  color: var(--primary);
+}
+
+.clear-search-btn.show {
+  display: flex;
+}
+
 .search-bar-input::placeholder {
   color: var(--text-muted);
   font-weight: 700;
@@ -129,6 +163,29 @@ header.bg-primary {
 .search-bar-input:focus,
 .search-bar-select:focus {
   box-shadow: none;
+}
+
+.search-global-error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+  animation: fadeInDown 0.3s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .search-bar-separator {
@@ -534,8 +591,13 @@ header.bg-primary {
   transform: translateY(-50%) scale(1.15);
 }
 
-#lightboxPrevBtn { left: -30px; }
-#lightboxNextBtn { right: -30px; }
+#lightboxPrevBtn {
+  left: -30px;
+}
+
+#lightboxNextBtn {
+  right: -30px;
+}
 
 /* --- Utility Classes --- */
 .btn-back-circle {
@@ -552,9 +614,17 @@ header.bg-primary {
   background-color: var(--white);
 }
 
-.w-full { width: 100%; }
-.text-center { text-align: center; }
-.mb-10 { margin-bottom: 10px; }
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
 
 .summary-footer-box {
   width: 100%;
@@ -572,20 +642,25 @@ header.bg-primary {
 
 /* --- Responsive --- */
 @media (max-width: 767.98px) {
+
   .hotel-hero-image,
   .carousel-image {
     height: 260px;
   }
+
   .hotel-strip-image {
     height: 110px;
   }
+
   .booking-room-image {
     height: 120px;
   }
+
   .simple-carousel .carousel-control-prev,
   .simple-carousel .carousel-control-next {
     display: none;
   }
+
   .room-selection-table {
     display: block;
     overflow-x: auto;
@@ -599,20 +674,25 @@ header.bg-primary {
     border-radius: 20px;
     align-items: stretch;
   }
+
   .search-bar-icon-column {
     display: none;
   }
+
   .search-bar-group {
     border-left: 0 !important;
     border-top: 1px solid var(--border-light);
     padding: 1.25rem 1.5rem;
   }
+
   .search-bar-group:first-of-type {
     border-top: 0;
   }
+
   .search-bar-button-column {
     padding: 1rem 1.5rem 1.5rem;
   }
+
   .search-bar-button {
     height: 56px;
     min-height: auto;
@@ -621,7 +701,15 @@ header.bg-primary {
 }
 
 @media (max-width: 1200px) {
-  #lightboxPrevBtn { left: 10px; }
-  #lightboxNextBtn { right: 10px; }
-  #imageLightboxModal .modal-dialog { max-width: 98vw; }
+  #lightboxPrevBtn {
+    left: 10px;
+  }
+
+  #lightboxNextBtn {
+    right: 10px;
+  }
+
+  #imageLightboxModal .modal-dialog {
+    max-width: 98vw;
+  }
 }

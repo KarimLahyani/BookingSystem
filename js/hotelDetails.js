@@ -111,7 +111,7 @@
           <p>${formatCurrency(Math.round(hotel.pricePerNight * roomType.multiplier))}</p>
         </td>
         <td class="text-center">
-          <div class="d-flex flex-column gap-2 align-items-center">
+          <div class="d-flex flex-column gap-2 align-items-center mx-auto" style="max-width: 140px;">
             <div class="w-100">
               <label class="small text-muted mb-1 d-block text-start">Rooms</label>
               <select class="form-select form-select-sm booking-room-count" data-base-price="${Math.round(hotel.pricePerNight * roomType.multiplier)}" data-max-guests="${roomType.guestCount}" data-price="${totalPrice}" id="room-count-${index}">
@@ -138,11 +138,11 @@
     section.innerHTML = `
       <table class="table room-selection-table bg-white-table">
           <tr>
-            <th class="text-center room-reservation-th" style="width: 35%;">Room Type</th>
+            <th class="text-center room-reservation-th" style="width: 30%;">Room Type</th>
             <th class="text-center room-reservation-th" style="width: 10%;">Conditions</th>
             <th class="text-center room-reservation-th" style="width: 10%;">Guests</th>
             <th class="text-center room-reservation-th" style="width: 15%;">Price per Night</th>
-            <th class="text-center room-reservation-th" style="width: 20%;">Select Rooms & Guests</th>
+            <th class="text-center room-reservation-th" style="width: 15%;">Select Rooms & Guests</th>
             <th class="text-center room-reservation-th" style="width: 20%;">Summary</th>
           </tr>
           ${roomRows}
@@ -257,6 +257,34 @@
         select.addEventListener("change", updateTotal);
     });
 
+    // Auto-select based on search criteria
+    const reqRooms = parseInt(searchData.roomCount) || 0;
+    const reqGuests = parseInt(searchData.guestCount) || 0;
+
+    if (reqRooms > 0) {
+        let bestTypeIndex = 0;
+        for (let i = 0; i < hotel.roomTypes.length; i++) {
+            if (hotel.roomTypes[i].guestCount * reqRooms >= reqGuests) {
+                bestTypeIndex = i;
+                break;
+            }
+        }
+
+        const targetRoomSelect = document.getElementById(`room-count-${bestTypeIndex}`);
+        if (targetRoomSelect) {
+            targetRoomSelect.value = Math.min(reqRooms, 4);
+            updateTotal(); 
+            
+            const targetGuestSelect = document.getElementById(`guest-count-${bestTypeIndex}`);
+            if (targetGuestSelect) {
+                // Ensure the guest count is valid for the selected number of rooms
+                const maxAllowedGuests = parseInt(hotel.roomTypes[bestTypeIndex].guestCount) * reqRooms;
+                targetGuestSelect.value = Math.min(reqGuests, maxAllowedGuests);
+                updateTotal();
+            }
+        }
+    }
+
     finalBookBtn.addEventListener("click", function () {
         const errorElem = document.getElementById("bookingValidationError");
         errorElem.classList.remove("show");
@@ -290,8 +318,8 @@
 
         const reservationData = {
             roomCount: selectedRooms.reduce((sum, room) => sum + room.count, 0),
-            guestCount: selectedRooms.reduce((sum, room) => sum + (room.guestCount * room.count), 0),
-            roomType: selectedRooms.map(room => room.roomType).join(", "),
+            guestCount: selectedRooms.reduce((sum, room) => sum + room.guestCount, 0),
+            roomType: selectedRooms.map(room => `${room.count}x ${room.roomType}`).join(", "),
             checkInDate: summaryCheckIn.value,
             checkOutDate: summaryCheckOut.value,
             totalPrice: totalPrice

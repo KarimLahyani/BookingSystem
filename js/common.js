@@ -138,7 +138,9 @@
   function validateSearchForm(form) {
     const checkInInput = form.querySelector("[name='checkInDate']");
     const checkOutInput = form.querySelector("[name='checkOutDate']");
+    const globalError = form.querySelector("#searchGlobalError");
 
+    if (globalError) globalError.classList.add("d-none");
     checkOutInput.setCustomValidity("");
 
     if (checkInInput.value && checkOutInput.value && checkOutInput.value <= checkInInput.value) {
@@ -146,12 +148,36 @@
     }
 
     form.classList.add("was-validated");
-    return form.checkValidity();
+    const isValid = form.checkValidity();
+    
+    if (!isValid && globalError) {
+      globalError.classList.remove("d-none");
+    }
+
+    return isValid;
   }
 
   function attachSearchFormHandler(form, onSearchCompleted) {
     setSearchDateConstraints(form);
     populateSearchForm(form, getCurrentSearch());
+
+    const input = form.querySelector("[name='searchText']");
+    const clearBtn = form.querySelector(".clear-search-btn");
+
+    if (input && clearBtn) {
+      const toggleClearBtn = () => {
+        clearBtn.classList.toggle("show", input.value.length > 0);
+      };
+
+      input.addEventListener("input", toggleClearBtn);
+      toggleClearBtn(); // Initial check
+
+      clearBtn.addEventListener("click", function() {
+        input.value = "";
+        toggleClearBtn();
+        input.focus();
+      });
+    }
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
