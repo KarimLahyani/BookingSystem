@@ -7,15 +7,17 @@
     const badge = document.getElementById("resultsCountBadge");
     const grid = document.getElementById("resultsGrid");
 
+    const sortedResults = [...results].sort((a, b) => a.name.localeCompare(b.name));
+
     if (searchData.searchText) {
       heading.textContent = `Results for "${searchData.searchText}"`;
     } else {
       heading.textContent = "Search Results";
     }
 
-    badge.textContent = `${results.length} hotel${results.length === 1 ? "" : "s"}`;
+    badge.textContent = `${sortedResults.length} hotel${sortedResults.length === 1 ? "" : "s"}`;
 
-    if (!results.length) {
+    if (!sortedResults.length) {
       grid.innerHTML = `
         <div class="empty-state p-4">
           <h3 class="h5">No hotels found</h3>
@@ -27,7 +29,7 @@
 
     grid.innerHTML = `
       <div class="row g-4">
-        ${results.map((hotel) => `
+        ${sortedResults.map((hotel) => `
           <div class="col-12 col-sm-6 col-lg-3">
             <button class="card hotel-card clickable-card shadow-sm border-0 text-start w-100 hotel-result-button p-0 overflow-hidden" type="button" data-hotel-id="${hotel.id}">
               <img src="${hotel.mainImage}" class="card-img-top" alt="${hotel.name}">
@@ -46,7 +48,7 @@
 
     grid.querySelectorAll(".hotel-result-button").forEach((button) => {
       button.addEventListener("click", function () {
-        const selectedHotel = results.find((hotel) => hotel.id === button.dataset.hotelId);
+        const selectedHotel = sortedResults.find((hotel) => hotel.id === button.dataset.hotelId);
         const searchForm = document.getElementById("searchForm");
         const freshSearchData = searchForm ? window.HotelAppCommon.readSearchForm(searchForm) : searchData;
 

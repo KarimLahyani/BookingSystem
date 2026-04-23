@@ -36,17 +36,17 @@
                   <div class="search-bar-group search-bar-group-wide">
                     <label class="search-bar-label" for="checkInDate">Check-in/out</label>
                     <div class="search-bar-inline-fields">
-                      <input class="search-bar-input" id="checkInDate" name="checkInDate" type="date">
+                      <input class="search-bar-input" id="checkInDate" name="checkInDate" type="date" required>
                       <span class="search-bar-separator">-</span>
-                      <input class="search-bar-input" id="checkOutDate" name="checkOutDate" type="date">
+                      <input class="search-bar-input" id="checkOutDate" name="checkOutDate" type="date" required>
                     </div>
                     <div class="invalid-feedback">Please select valid check-in and check-out dates.</div>
                   </div>
                   <div class="search-bar-group">
                     <label class="search-bar-label" for="guestCount">Guests and rooms</label>
                     <div class="search-bar-inline-fields">
-                      <select class="search-bar-select" id="guestCount" name="guestCount">
-                        <option value="" selected>Guests</option>
+                      <select class="search-bar-select" id="guestCount" name="guestCount" required>
+                        <option value="" selected disabled>Guests</option>
                         <option value="1">1 Guest</option>
                         <option value="2">2 Guests</option>
                         <option value="3">3 Guests</option>
@@ -55,8 +55,8 @@
                         <option value="6">6 Guests</option>
                       </select>
                       <span class="search-bar-separator">,</span>
-                      <select class="search-bar-select" id="roomCount" name="roomCount">
-                        <option value="" selected>Rooms</option>
+                      <select class="search-bar-select" id="roomCount" name="roomCount" required>
+                        <option value="" selected disabled>Rooms</option>
                         <option value="1">1 Room</option>
                         <option value="2">2 Rooms</option>
                         <option value="3">3 Rooms</option>

@@ -31,7 +31,7 @@
     `;
   }
 
-  function handleSubmit(selectedHotel, iti) {
+  function handleSubmit(selectedHotel) {
     const form = document.getElementById("paymentForm");
 
     form.addEventListener("submit", function (event) {
@@ -58,14 +58,9 @@
           expiryInput.setCustomValidity("");
       }
 
-      if (!form.checkValidity() || !iti.isValidNumber()) {
-        if (!iti.isValidNumber()) {
-            form.phone.classList.add("is-invalid");
-        }
+      if (!form.checkValidity()) {
         return;
       }
-
-      form.phone.classList.remove("is-invalid");
 
       const reservationData = selectedHotel.reservationData;
       const totalAmount = reservationData.totalPrice || calculateTotalAmount(selectedHotel, reservationData);
@@ -87,7 +82,7 @@
           "firstName": form.firstName.value.trim(),
           "lastName": form.lastName.value.trim(),
           "email": form.email.value.trim(),
-          "phone": iti.getNumber()
+          "phone": form.phone.value.trim()
         },
         "paymentInformation": {
           "cardInfo": {
@@ -126,50 +121,30 @@
 
     renderSummary(selectedHotel);
 
-    const paymentForm = document.getElementById("paymentForm");
-    const phoneInput = document.querySelector("#phone");
-    const iti = window.intlTelInput(phoneInput, {
-      initialCountry: "tr",
-      separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-
-    handleSubmit(selectedHotel, iti);
+    handleSubmit(selectedHotel);
 
     // Restrict input to numbers only for specific fields
-    const numberFields = ["cardNumber", "cvc"];
+    const numberFields = ["cardNumber", "cvc", "phone"];
     numberFields.forEach((fieldId) => {
       const field = document.getElementById(fieldId);
-      field.addEventListener("input", function (event) {
-        this.value = this.value.replace(/\D/g, "");
-      });
-    });
-
-    // Limit input length for phone and CVC fields
-    phoneInput.addEventListener("input", function () {
-      if (this.value.length > 10) {
-        this.value = this.value.slice(0, 10);
+      if (field) {
+        field.addEventListener("input", function (event) {
+          this.value = this.value.replace(/\D/g, "");
+        });
       }
     });
 
-    const cvcInput = document.querySelector("#cvc");
-    if (cvcInput) {
-        cvcInput.addEventListener("input", function () {
-          if (this.value.length > 3) {
-            this.value = this.value.slice(0, 3);
-          }
-        });
-    }
-
-    // Initialize datepicker for expiration date
-    const expiryDateInput = document.querySelector("#expiryDate");
-    $(expiryDateInput).datepicker({
-      format: "mm/yy",
-      startView: "months",
-      minViewMode: "months",
-      autoclose: true,
-    }).on("changeDate change", function() {
+    // Format Expiry Date input automatically
+    const expiryInput = document.getElementById("expiryDate");
+    if (expiryInput) {
+      expiryInput.addEventListener("input", function (e) {
+        let value = this.value.replace(/\D/g, "");
+        if (value.length > 2) {
+          value = value.substring(0, 2) + "/" + value.substring(2, 4);
+        }
+        this.value = value;
         this.setCustomValidity("");
-    });
+      });
+    }
   });
 }());
