@@ -34,7 +34,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Family Room",
@@ -91,7 +91,7 @@ window.UploadedHotelSeed = {
       "name": "Catalonia Brussels Hotel",
       "city": "Brussels",
       "address": "Avenue du Haut-Pont, 2 Hoge Bruglaan, Brussels, Brussels-Capital, Belgium",
-      "description": "Ideally located in the prime touristic area of Elsene / Ixelles, Hotel HC Brussels promises a relaxing and wonderful visit. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. Free Wi-Fi in all rooms, facilities for disabled guests, Wi-Fi in public areas, car park, room service are there for guest's enjoyment. Comfortable guestrooms ensure a good night's sleep with some rooms featuring facilities such as internet access \u2013 wireless, air conditioning, heating, wake-up service, desk. The hotel offers various recreational opportunities. No matter what your reasons are for visiting Brussels, Hotel HC Brussels will make you feel instantly at home.",
+      "description": "Ideally located in the prime touristic area of Elsene / Ixelles, Hotel HC Brussels promises a relaxing and wonderful visit. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. Free Wi-Fi in all rooms, facilities for disabled guests, Wi-Fi in public areas, car park, room service are there for guest's enjoyment. Comfortable guestrooms ensure a good night's sleep with some rooms featuring facilities such as internet access – wireless, air conditioning, heating, wake-up service, desk. The hotel offers various recreational opportunities. No matter what your reasons are for visiting Brussels, Hotel HC Brussels will make you feel instantly at home.",
       "info": "Hoteles Catalonia in Belgium with 35 review(s).",
       "starCount": 3,
       "rating": 8.1,
@@ -125,7 +125,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -163,7 +163,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -177,7 +177,7 @@ window.UploadedHotelSeed = {
       "name": "Hotel Intercontinental Cali",
       "city": "Cali",
       "address": "Av. Colombia No. 2-72, Cali, Valle del Cauca, Colombia",
-      "description": "Ideally located in the prime touristic area of Cali City Center, Hotel Intercontinental Cali promises a relaxing and wonderful visit. The hotel has everything you need for a comfortable stay. Service-minded staff will welcome and guide you at the Hotel Intercontinental Cali. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access \u2013 wireless, non smoking rooms, air conditioning, wake-up service to ensure a restful night. The hotel offers various recreational opportunities. No matter what your reasons are for visiting Cali, Hotel Intercontinental Cali will make you feel instantly at home.",
+      "description": "Ideally located in the prime touristic area of Cali City Center, Hotel Intercontinental Cali promises a relaxing and wonderful visit. The hotel has everything you need for a comfortable stay. Service-minded staff will welcome and guide you at the Hotel Intercontinental Cali. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access – wireless, non smoking rooms, air conditioning, wake-up service to ensure a restful night. The hotel offers various recreational opportunities. No matter what your reasons are for visiting Cali, Hotel Intercontinental Cali will make you feel instantly at home.",
       "info": "InterContinental Hotels Group in Colombia with 4 review(s).",
       "starCount": 4,
       "rating": 8.8,
@@ -206,7 +206,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -220,7 +220,7 @@ window.UploadedHotelSeed = {
       "name": "Hotel Caribe Cartagena",
       "city": "Cartagena",
       "address": "Carrera 1, 2-87, Bocagrande, Cartagena, Bolivar, Colombia",
-      "description": "The 5-star Hotel Caribe Cartagena offers comfort and convenience whether you're on business or holiday in Cartagena. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. To be found at the hotel are 24-hour room service, free Wi-Fi in all rooms, facilities for disabled guests, Wi-Fi in public areas, car park. Designed for comfort, selected guestrooms offer cleaning products, mirror, closet, separate living room, internet access \u2013 wireless to ensure a restful night. Take a break from a long day and make use of hot tub, fitness center, sauna, golf course (on site), outdoor pool. Discover all Cartagena has to offer by making Hotel Caribe Cartagena your base.",
+      "description": "The 5-star Hotel Caribe Cartagena offers comfort and convenience whether you're on business or holiday in Cartagena. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. To be found at the hotel are 24-hour room service, free Wi-Fi in all rooms, facilities for disabled guests, Wi-Fi in public areas, car park. Designed for comfort, selected guestrooms offer cleaning products, mirror, closet, separate living room, internet access – wireless to ensure a restful night. Take a break from a long day and make use of hot tub, fitness center, sauna, golf course (on site), outdoor pool. Discover all Cartagena has to offer by making Hotel Caribe Cartagena your base.",
       "info": "No chain in Colombia with 57 review(s).",
       "starCount": 5,
       "rating": 8.4,
@@ -244,12 +244,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Suite",
@@ -297,7 +297,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -330,7 +330,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Executive Room",
@@ -391,7 +391,7 @@ window.UploadedHotelSeed = {
       "id": "hotel-147",
       "name": "Van der Valk Hotel Hildesheim",
       "city": "Hildesheim",
-      "address": "Markt 4, GPS: Jakobistra\u00dfe, Hildesheim, Germany",
+      "address": "Markt 4, GPS: Jakobistraße, Hildesheim, Germany",
       "description": "Ideally located in the prime touristic area of Hildesheim City Center, Van der Valk Hotel Hildesheim promises a relaxing and wonderful visit. The hotel offers guests a range of services and amenities designed to provide comfort and convenience. To be found at the hotel are free Wi-Fi in all rooms, 24-hour front desk, facilities for disabled guests, room service, meeting facilities. Designed for comfort, selected guestrooms offer air conditioning, heating, desk, mini bar, iPod docking station to ensure a restful night. Take a break from a long day and make use of fitness center, sauna, indoor pool, spa, massage. Convenience and comfort makes Van der Valk Hotel Hildesheim the perfect choice for your stay in Hildesheim.",
       "info": "No chain in Germany with 21 review(s).",
       "starCount": 4,
@@ -421,7 +421,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Family Room",
@@ -435,10 +435,10 @@ window.UploadedHotelSeed = {
       "name": "Imperial Hotel",
       "city": "Hong Kong",
       "address": "32-34 Nathan Road, Hong Kong, Hong Kong, Hong Kong",
-      "description": "Set in a prime location of Hong Kong, Imperial Hotel puts everything the city has to offer just outside your doorstep. Featuring a complete list of amenities, guests will find their stay at the property a comfortable one. All the necessary facilities, including free Wi-Fi in all rooms, 24-hour front desk, luggage storage, Wi-Fi in public areas, babysitting, are at hand. Designed for comfort, selected guestrooms offer television LCD/plasma screen, carpeting, slippers, smoke detector, internet access \u2013 wireless to ensure a restful night. The hotel offers various recreational opportunities. Imperial Hotel combines warm hospitality with a lovely ambiance to make your stay in Hong Kong unforgettable.",
+      "description": "Set in a prime location of Hong Kong, Imperial Hotel puts everything the city has to offer just outside your doorstep. Featuring a complete list of amenities, guests will find their stay at the property a comfortable one. All the necessary facilities, including free Wi-Fi in all rooms, 24-hour front desk, luggage storage, Wi-Fi in public areas, babysitting, are at hand. Designed for comfort, selected guestrooms offer television LCD/plasma screen, carpeting, slippers, smoke detector, internet access – wireless to ensure a restful night. The hotel offers various recreational opportunities. Imperial Hotel combines warm hospitality with a lovely ambiance to make your stay in Hong Kong unforgettable.",
       "info": "No chain in Hong Kong with 10678 review(s).",
       "starCount": 3,
-      "rating": 7.0,
+      "rating": 7,
       "ratingCount": 10678,
       "pricePerNight": 237,
       "mainImage": "http://pix4.agoda.net/hotelimages/99/99/99_16022014110040064258.jpg?s=312x",
@@ -469,7 +469,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -507,7 +507,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Family Room",
@@ -555,7 +555,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -563,7 +563,7 @@ window.UploadedHotelSeed = {
       "id": "hotel-13",
       "name": "NH Iquique Hotel",
       "city": "Iquique",
-      "address": "Av Costanera 3939, Iquique, Tarapac\u00e1, Chile",
+      "address": "Av Costanera 3939, Iquique, Tarapacá, Chile",
       "description": "NH Iquique Hotel is perfectly located for both business and leisure guests in Iquique. The hotel offers guests a range of services and amenities designed to provide comfort and convenience. All the necessary facilities, including 24-hour front desk, facilities for disabled guests, Wi-Fi in public areas, car park, room service, are at hand. Guestrooms are designed to provide an optimal level of comfort with welcoming decor and some offering convenient amenities like television LCD/plasma screen, separate living room, air conditioning, heating, wake-up service. To enhance guests' stay, the hotel offers recreational facilities such as fitness center, outdoor pool. A welcoming atmosphere and excellent service are what you can expect during your stay at NH Iquique Hotel.",
       "info": "NH Hotels in Chile with 5 review(s).",
       "starCount": 4,
@@ -607,7 +607,7 @@ window.UploadedHotelSeed = {
       "name": "The Oberoi Rajvilas Jaipur Hotel",
       "city": "Jaipur",
       "address": "Goner Road, Jaipur, Rajasthan, India",
-      "description": "The Oberoi Rajvilas Jaipur Hotel is conveniently located in the popular Jaipur Airport area. The hotel offers a wide range of amenities and perks to ensure you have a great time. 24-hour room service, 24-hour front desk, facilities for disabled guests, express check-in/check-out, luggage storage are on the list of things guests can enjoy. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find carpeting, slippers, television LCD/plasma screen, mirror, internet access \u2013 wireless. The hotel's peaceful atmosphere extends to its recreational facilities which include hot tub, fitness center, outdoor pool, spa, massage. The Oberoi Rajvilas Jaipur Hotel combines warm hospitality with a lovely ambiance to make your stay in Jaipur unforgettable.",
+      "description": "The Oberoi Rajvilas Jaipur Hotel is conveniently located in the popular Jaipur Airport area. The hotel offers a wide range of amenities and perks to ensure you have a great time. 24-hour room service, 24-hour front desk, facilities for disabled guests, express check-in/check-out, luggage storage are on the list of things guests can enjoy. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find carpeting, slippers, television LCD/plasma screen, mirror, internet access – wireless. The hotel's peaceful atmosphere extends to its recreational facilities which include hot tub, fitness center, outdoor pool, spa, massage. The Oberoi Rajvilas Jaipur Hotel combines warm hospitality with a lovely ambiance to make your stay in Jaipur unforgettable.",
       "info": "Oberoi Hotels & Resorts in India with 19 review(s).",
       "starCount": 5,
       "rating": 9.1,
@@ -631,12 +631,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Suite",
@@ -684,7 +684,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -693,7 +693,7 @@ window.UploadedHotelSeed = {
       "name": "Sai Kaew Beach Resort",
       "city": "Koh Samet",
       "address": "8/1 Moo 4 Tumbon Phe Muang, Koh Samet, Rayong, Thailand",
-      "description": "The 4-star Sai Kaew Beach Resort offers comfort and convenience whether you're on business or holiday in Koh Samet. The property features a wide range of facilities to make your stay a pleasant experience. Free Wi-Fi in all rooms, daily housekeeping, gift/souvenir shop, 24-hour front desk, Wi-Fi in public areas are just some of the facilities on offer. Some of the well-appointed guestrooms feature slippers, separate living room, television LCD/plasma screen, mirror, internet access \u2013 wireless. Take a break from a long day and make use of fitness center, sauna, outdoor pool, spa, massage. No matter what your reasons are for visiting Koh Samet, Sai Kaew Beach Resort will make you feel instantly at home.",
+      "description": "The 4-star Sai Kaew Beach Resort offers comfort and convenience whether you're on business or holiday in Koh Samet. The property features a wide range of facilities to make your stay a pleasant experience. Free Wi-Fi in all rooms, daily housekeeping, gift/souvenir shop, 24-hour front desk, Wi-Fi in public areas are just some of the facilities on offer. Some of the well-appointed guestrooms feature slippers, separate living room, television LCD/plasma screen, mirror, internet access – wireless. Take a break from a long day and make use of fitness center, sauna, outdoor pool, spa, massage. No matter what your reasons are for visiting Koh Samet, Sai Kaew Beach Resort will make you feel instantly at home.",
       "info": "Samed Resorts Group in Thailand with 3439 review(s).",
       "starCount": 4,
       "rating": 8.2,
@@ -736,7 +736,7 @@ window.UploadedHotelSeed = {
       "name": "Watazen Ryokan Hotel",
       "city": "Kyoto",
       "address": "604-8113 Nakagyo-ku Yanaginobaba-dori Rokkaku-kudaru 413, Kyoto, Kyoto, Japan",
-      "description": "Watazen Ryokan Hotel is conveniently located in the popular Central Kyoto area. The hotel offers a wide range of amenities and perks to ensure you have a great time. Take advantage of the hotel's free Wi-Fi in all rooms, daily housekeeping, fax machine, laundromat, photocopying. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access \u2013 wireless, internet access \u2013 wireless (complimentary), non smoking rooms, air conditioning to ensure a restful night. The hotel offers various recreational opportunities. Watazen Ryokan Hotel is an excellent choice from which to explore Kyoto or to simply relax and rejuvenate.",
+      "description": "Watazen Ryokan Hotel is conveniently located in the popular Central Kyoto area. The hotel offers a wide range of amenities and perks to ensure you have a great time. Take advantage of the hotel's free Wi-Fi in all rooms, daily housekeeping, fax machine, laundromat, photocopying. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access – wireless, internet access – wireless (complimentary), non smoking rooms, air conditioning to ensure a restful night. The hotel offers various recreational opportunities. Watazen Ryokan Hotel is an excellent choice from which to explore Kyoto or to simply relax and rejuvenate.",
       "info": "No chain in Japan with 394 review(s).",
       "starCount": 3,
       "rating": 8.8,
@@ -770,7 +770,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -808,7 +808,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -868,7 +868,7 @@ window.UploadedHotelSeed = {
       "description": "Located in Lima City Center, Hotel Mariel & Apartments is a perfect starting point from which to explore Lima. The hotel has everything you need for a comfortable stay. Free Wi-Fi in all rooms, 24-hour front desk, luggage storage, Wi-Fi in public areas, valet parking are there for guest's enjoyment. All rooms are designed and decorated to make guests feel right at home, and some rooms come with wake-up service, air conditioning, heating, mini bar, telephone. The hotel offers various recreational opportunities. For reliable service and professional staff, Hotel Mariel & Apartments caters to your needs.",
       "info": "No chain in Peru with 36 review(s).",
       "starCount": 3,
-      "rating": 8.0,
+      "rating": 8,
       "ratingCount": 36,
       "pricePerNight": 80,
       "mainImage": "http://pix3.agoda.net/hotelimages/132/132/132_1112020202004688488.jpg?s=312x",
@@ -899,7 +899,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -907,7 +907,7 @@ window.UploadedHotelSeed = {
       "id": "hotel-97",
       "name": "Amba Hotel Charing Cross",
       "city": "London",
-      "address": "The Strand, London, London,\u00a0England, United Kingdom",
+      "address": "The Strand, London, London, England, United Kingdom",
       "description": "Amba Hotel Charing Cross is a popular choice amongst travelers in London, whether exploring or just passing through. The hotel offers a wide range of amenities and perks to ensure you have a great time. 24-hour room service, free Wi-Fi in all rooms, 24-hour security, daily housekeeping, taxi service are just some of the facilities on offer. Designed for comfort, selected guestrooms offer locker, closet, complimentary tea, towels, carpeting to ensure a restful night. Access to the hotel's fitness center will further enhance your satisfying stay. A welcoming atmosphere and excellent service are what you can expect during your stay at Amba Hotel Charing Cross.",
       "info": "Thistle & Guoman in United Kingdom with 425 review(s).",
       "starCount": 4,
@@ -937,7 +937,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Family Room",
@@ -950,7 +950,7 @@ window.UploadedHotelSeed = {
       "id": "hotel-150",
       "name": "Holiday Inn Express London Greenwich",
       "city": "London",
-      "address": "Bugsbys Way, London, London,\u00a0England, United Kingdom",
+      "address": "Bugsbys Way, London, London, England, United Kingdom",
       "description": "Holiday Inn Express London Greenwich is a popular choice amongst travelers in London, whether exploring or just passing through. The hotel has everything you need for a comfortable stay. Service-minded staff will welcome and guide you at the Holiday Inn Express London Greenwich. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find television LCD/plasma screen, non smoking rooms, air conditioning, heating, desk. The hotel offers various recreational opportunities. Holiday Inn Express London Greenwich combines warm hospitality with a lovely ambiance to make your stay in London unforgettable.",
       "info": "InterContinental Hotels Group in United Kingdom with 87 review(s).",
       "starCount": 3,
@@ -985,7 +985,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -993,7 +993,7 @@ window.UploadedHotelSeed = {
       "id": "hotel-122",
       "name": "The Tower Hotel",
       "city": "London",
-      "address": "St Katharine's Way, London, London,\u00a0England, United Kingdom",
+      "address": "St Katharine's Way, London, London, England, United Kingdom",
       "description": "The Tower Hotel is perfectly located for both business and leisure guests in London. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. Facilities like 24-hour room service, free Wi-Fi in all rooms, 24-hour security, daily housekeeping, postal service are readily available for you to enjoy. Each guestroom is elegantly furnished and equipped with handy amenities. The hotel offers various recreational opportunities. Friendly staff, great facilities and close proximity to all that London has to offer are three great reasons you should stay at The Tower Hotel.",
       "info": "Thistle & Guoman in United Kingdom with 1097 review(s).",
       "starCount": 4,
@@ -1023,7 +1023,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -1040,7 +1040,7 @@ window.UploadedHotelSeed = {
       "description": "Grand Coloane Resort is conveniently located in the popular Coloane area. The hotel offers a wide range of amenities and perks to ensure you have a great time. Take advantage of the hotel's 24-hour room service, daily housekeeping, free Wi-Fi in all rooms, taxi service, 24-hour security. Designed for comfort, selected guestrooms offer television LCD/plasma screen, additional toilet, bathroom phone, carpeting, clothes rack to ensure a restful night. Entertain the hotel's recreational facilities, including hot tub, fitness center, sauna, golf course (on site), outdoor pool. Grand Coloane Resort is an excellent choice from which to explore Macau or to simply relax and rejuvenate.",
       "info": "No chain in Macau with 3657 review(s).",
       "starCount": 5,
-      "rating": 8.0,
+      "rating": 8,
       "ratingCount": 3657,
       "pricePerNight": 125,
       "mainImage": "http://pix4.agoda.net/hotelimages/18/-1/91c5a3c5d5cc7189b0099fab9a2fbb64.jpg?s=312x",
@@ -1061,12 +1061,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Suite",
@@ -1080,7 +1080,7 @@ window.UploadedHotelSeed = {
       "name": "Hotel Serrano",
       "city": "Madrid",
       "address": "Marques de Villamejor, 8, Madrid, Madrid, Spain",
-      "description": "Hotel Serrano is a popular choice amongst travelers in Madrid, whether exploring or just passing through. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. Service-minded staff will welcome and guide you at the Hotel Serrano. Guestrooms are designed to provide an optimal level of comfort with welcoming decor and some offering convenient amenities like television LCD/plasma screen, internet access \u2013 wireless, internet access \u2013 wireless (complimentary), non smoking rooms, air conditioning. The hotel offers various recreational opportunities. Convenience and comfort makes Hotel Serrano the perfect choice for your stay in Madrid.",
+      "description": "Hotel Serrano is a popular choice amongst travelers in Madrid, whether exploring or just passing through. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. Service-minded staff will welcome and guide you at the Hotel Serrano. Guestrooms are designed to provide an optimal level of comfort with welcoming decor and some offering convenient amenities like television LCD/plasma screen, internet access – wireless, internet access – wireless (complimentary), non smoking rooms, air conditioning. The hotel offers various recreational opportunities. Convenience and comfort makes Hotel Serrano the perfect choice for your stay in Madrid.",
       "info": "No chain in Spain with 108 review(s).",
       "starCount": 4,
       "rating": 8.2,
@@ -1123,7 +1123,7 @@ window.UploadedHotelSeed = {
       "name": "TRYP Malaga Alameda Hotel",
       "city": "Malaga",
       "address": "Avenida de la Aurora CC.Larios Centro S/N, Malaga, Andalusia, Spain",
-      "description": "TRYP M\u00e1laga Alameda Hotel is perfectly located for both business and leisure guests in Malaga. The hotel has everything you need for a comfortable stay. To be found at the hotel are 24-hour room service, free Wi-Fi in all rooms, 24-hour front desk, facilities for disabled guests, Wi-Fi in public areas. Each guestroom is elegantly furnished and equipped with handy amenities. The hotel's peaceful atmosphere extends to its recreational facilities which include fitness center, sauna. TRYP M\u00e1laga Alameda Hotel combines warm hospitality with a lovely ambiance to make your stay in Malaga unforgettable.",
+      "description": "TRYP Málaga Alameda Hotel is perfectly located for both business and leisure guests in Malaga. The hotel has everything you need for a comfortable stay. To be found at the hotel are 24-hour room service, free Wi-Fi in all rooms, 24-hour front desk, facilities for disabled guests, Wi-Fi in public areas. Each guestroom is elegantly furnished and equipped with handy amenities. The hotel's peaceful atmosphere extends to its recreational facilities which include fitness center, sauna. TRYP Málaga Alameda Hotel combines warm hospitality with a lovely ambiance to make your stay in Malaga unforgettable.",
       "info": "Melia Hotels International in Spain with 21 review(s).",
       "starCount": 4,
       "rating": 7.5,
@@ -1166,7 +1166,7 @@ window.UploadedHotelSeed = {
       "name": "Hotel Dann Carlton Medellin",
       "city": "Medellin",
       "address": "Cra 43A No. 7-50, Medellin, Colombia",
-      "description": "The 5-star Hotel Dann Carlton Medell\u00edn offers comfort and convenience whether you're on business or holiday in Medellin. Both business travelers and tourists can enjoy the hotel's facilities and services. Facilities like 24-hour front desk, facilities for disabled guests, luggage storage, room service, airport transfer are readily available for you to enjoy. Some of the well-appointed guestrooms feature air conditioning, wake-up service, desk, mini bar, alarm clock. Recuperate from a full day of sightseeing in the comfort of your room or take advantage of the hotel's recreational facilities, including fitness center, outdoor pool, spa, massage, steamroom. Friendly staff, great facilities and close proximity to all that Medellin has to offer are three great reasons you should stay at Hotel Dann Carlton Medell\u00edn.",
+      "description": "The 5-star Hotel Dann Carlton Medellín offers comfort and convenience whether you're on business or holiday in Medellin. Both business travelers and tourists can enjoy the hotel's facilities and services. Facilities like 24-hour front desk, facilities for disabled guests, luggage storage, room service, airport transfer are readily available for you to enjoy. Some of the well-appointed guestrooms feature air conditioning, wake-up service, desk, mini bar, alarm clock. Recuperate from a full day of sightseeing in the comfort of your room or take advantage of the hotel's recreational facilities, including fitness center, outdoor pool, spa, massage, steamroom. Friendly staff, great facilities and close proximity to all that Medellin has to offer are three great reasons you should stay at Hotel Dann Carlton Medellín.",
       "info": "No chain in Colombia with 15 review(s).",
       "starCount": 5,
       "rating": 8.1,
@@ -1190,7 +1190,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
@@ -1209,7 +1209,7 @@ window.UploadedHotelSeed = {
       "name": "Sarova Whitesands Beach Resort & Spa",
       "city": "Mombasa",
       "address": "Nyali/Malindi Highway, Mombasa, Mombasa, Kenya",
-      "description": "The 5-star Sarova Whitesands Beach Resort & Spa offers comfort and convenience whether you're on business or holiday in Mombasa. Offering a variety of facilities and services, the hotel provides all you need for a good night's sleep. Free Wi-Fi in all rooms, facilities for disabled guests, Wi-Fi in public areas, car park, airport transfer are just some of the facilities on offer. All rooms are designed and decorated to make guests feel right at home, and some rooms come with separate living room, internet access \u2013 wireless, internet access \u2013 wireless (complimentary), non smoking rooms, air conditioning. Entertain the hotel's recreational facilities, including fitness center, outdoor pool, spa, massage, kids club. Convenience and comfort makes Sarova Whitesands Beach Resort & Spa the perfect choice for your stay in Mombasa.",
+      "description": "The 5-star Sarova Whitesands Beach Resort & Spa offers comfort and convenience whether you're on business or holiday in Mombasa. Offering a variety of facilities and services, the hotel provides all you need for a good night's sleep. Free Wi-Fi in all rooms, facilities for disabled guests, Wi-Fi in public areas, car park, airport transfer are just some of the facilities on offer. All rooms are designed and decorated to make guests feel right at home, and some rooms come with separate living room, internet access – wireless, internet access – wireless (complimentary), non smoking rooms, air conditioning. Entertain the hotel's recreational facilities, including fitness center, outdoor pool, spa, massage, kids club. Convenience and comfort makes Sarova Whitesands Beach Resort & Spa the perfect choice for your stay in Mombasa.",
       "info": "Independent hotel in Kenya with 21 review(s).",
       "starCount": 5,
       "rating": 8.3,
@@ -1252,7 +1252,7 @@ window.UploadedHotelSeed = {
       "name": "Royal Hotel MUNAKATA",
       "city": "Munakata",
       "address": "1303 Tano, Munakata-shi, Munakata, Fukuoka, Japan",
-      "description": "Genkai Royal Hotel is conveniently located in the popular Munakata area. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. To be found at the hotel are free Wi-Fi in all rooms, facilities for disabled guests, luggage storage, Wi-Fi in public areas, car park. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find television LCD/plasma screen, linens, towels, internet access \u2013 wireless (complimentary), non smoking rooms. Recuperate from a full day of sightseeing in the comfort of your room or take advantage of the hotel's recreational facilities, including sauna, hot spring bath, outdoor pool, spa, massage. Friendly staff, great facilities and close proximity to all that Fukuoka has to offer are three great reasons you should stay at Genkai Royal Hotel.",
+      "description": "Genkai Royal Hotel is conveniently located in the popular Munakata area. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. To be found at the hotel are free Wi-Fi in all rooms, facilities for disabled guests, luggage storage, Wi-Fi in public areas, car park. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find television LCD/plasma screen, linens, towels, internet access – wireless (complimentary), non smoking rooms. Recuperate from a full day of sightseeing in the comfort of your room or take advantage of the hotel's recreational facilities, including sauna, hot spring bath, outdoor pool, spa, massage. Friendly staff, great facilities and close proximity to all that Fukuoka has to offer are three great reasons you should stay at Genkai Royal Hotel.",
       "info": "Daiwa Royal Hotel in Japan with 44 review(s).",
       "starCount": 4,
       "rating": 7.3,
@@ -1329,7 +1329,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -1362,12 +1362,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Suite",
@@ -1381,7 +1381,7 @@ window.UploadedHotelSeed = {
       "name": "Hotel Apogia Nice",
       "city": "Nice",
       "address": "26, Rue Smolett, Nice, Provence-Alpes-Cote d'Azur, France",
-      "description": "Hotel Apogia Nice is conveniently located in the popular Nice City Center area. Offering a variety of facilities and services, the hotel provides all you need for a good night's sleep. Facilities like free Wi-Fi in all rooms, daily housekeeping, wheelchair accessible, 24-hour front desk, facilities for disabled guests are readily available for you to enjoy. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access \u2013 wireless, internet access \u2013 wireless (complimentary), non smoking rooms, air conditioning to ensure a restful night. The hotel offers various recreational opportunities. Hotel Apogia Nice is an excellent choice from which to explore Nice or to simply relax and rejuvenate.",
+      "description": "Hotel Apogia Nice is conveniently located in the popular Nice City Center area. Offering a variety of facilities and services, the hotel provides all you need for a good night's sleep. Facilities like free Wi-Fi in all rooms, daily housekeeping, wheelchair accessible, 24-hour front desk, facilities for disabled guests are readily available for you to enjoy. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access – wireless, internet access – wireless (complimentary), non smoking rooms, air conditioning to ensure a restful night. The hotel offers various recreational opportunities. Hotel Apogia Nice is an excellent choice from which to explore Nice or to simply relax and rejuvenate.",
       "info": "No chain in France with 121 review(s).",
       "starCount": 4,
       "rating": 7.6,
@@ -1410,7 +1410,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Family Room",
@@ -1458,7 +1458,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -1496,7 +1496,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -1513,7 +1513,7 @@ window.UploadedHotelSeed = {
       "description": "Located in Olsen, Staybridge Suites Austin Round Rock is a perfect starting point from which to explore Round Rock (TX). The hotel offers a wide range of amenities and perks to ensure you have a great time. Service-minded staff will welcome and guide you at the Staybridge Suites Austin Round Rock. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find non smoking rooms. Enjoy the hotel's recreational facilities, including fitness center, outdoor pool, before retiring to your room for a well-deserved rest. Staybridge Suites Austin Round Rock combines warm hospitality with a lovely ambiance to make your stay in Round Rock (TX) unforgettable.",
       "info": "InterContinental Hotels Group in United States with 3 review(s).",
       "starCount": 3,
-      "rating": 10.0,
+      "rating": 10,
       "ratingCount": 3,
       "pricePerNight": 112,
       "mainImage": "http://pix3.agoda.net/hotelimages/107/0/c1376dc07dff9f64bb7db9ca3bfba3f9.jpg?s=312x",
@@ -1544,7 +1544,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
@@ -1577,12 +1577,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Suite",
@@ -1596,7 +1596,7 @@ window.UploadedHotelSeed = {
       "name": "Park Suisse Hotel",
       "city": "Santa Margherita Ligure",
       "address": "Via Favale 31, Santa Margherita Ligure, Liguria, Italy",
-      "description": "Set in a prime location of Santa Margherita Ligure, Park Suisse Hotel puts everything the city has to offer just outside your doorstep. Featuring a complete list of amenities, guests will find their stay at the property a comfortable one. 24-hour room service, free Wi-Fi in all rooms, Wi-Fi in public areas, valet parking, car park are on the list of things guests can enjoy. Television LCD/plasma screen, linens, mirror, closet, internet access \u2013 wireless can be found in selected guestrooms. The hotel offers various recreational opportunities. Discover all Santa Margherita Ligure has to offer by making Park Suisse Hotel your base.",
+      "description": "Set in a prime location of Santa Margherita Ligure, Park Suisse Hotel puts everything the city has to offer just outside your doorstep. Featuring a complete list of amenities, guests will find their stay at the property a comfortable one. 24-hour room service, free Wi-Fi in all rooms, Wi-Fi in public areas, valet parking, car park are on the list of things guests can enjoy. Television LCD/plasma screen, linens, mirror, closet, internet access – wireless can be found in selected guestrooms. The hotel offers various recreational opportunities. Discover all Santa Margherita Ligure has to offer by making Park Suisse Hotel your base.",
       "info": "No chain in Italy with 55 review(s).",
       "starCount": 4,
       "rating": 7.5,
@@ -1625,7 +1625,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -1639,7 +1639,7 @@ window.UploadedHotelSeed = {
       "name": "Scandic Seinajoki",
       "city": "Seinajoki",
       "address": "Kauppakatu 10, Seinajoki, Finland",
-      "description": "Ideally located in the prime touristic area of Seinajoki, Cumulus Sein\u00e4joki promises a relaxing and wonderful visit. The property features a wide range of facilities to make your stay a pleasant experience. 24-hour front desk, facilities for disabled guests, luggage storage, room service, meeting facilities are on the list of things guests can enjoy. Comfortable guestrooms ensure a good night's sleep with some rooms featuring facilities such as air conditioning, heating, desk, mini bar, telephone. The hotel offers various recreational opportunities. A welcoming atmosphere and excellent service are what you can expect during your stay at Cumulus Sein\u00e4joki.",
+      "description": "Ideally located in the prime touristic area of Seinajoki, Cumulus Seinäjoki promises a relaxing and wonderful visit. The property features a wide range of facilities to make your stay a pleasant experience. 24-hour front desk, facilities for disabled guests, luggage storage, room service, meeting facilities are on the list of things guests can enjoy. Comfortable guestrooms ensure a good night's sleep with some rooms featuring facilities such as air conditioning, heating, desk, mini bar, telephone. The hotel offers various recreational opportunities. A welcoming atmosphere and excellent service are what you can expect during your stay at Cumulus Seinäjoki.",
       "info": "No chain in Finland with 13 review(s).",
       "starCount": 4,
       "rating": 7.4,
@@ -1668,7 +1668,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -1682,7 +1682,7 @@ window.UploadedHotelSeed = {
       "name": "Everbright Convention & Exhibition Centre International Hotel",
       "city": "Shanghai",
       "address": "66 Caobao Road, Xuhui district, Shanghai, Shanghai, China",
-      "description": "Everbright Convention & Exhibition Centre Internat is perfectly located for both business and leisure guests in Shanghai. Both business travelers and tourists can enjoy the hotel's facilities and services. Service-minded staff will welcome and guide you at the Everbright Convention & Exhibition Centre Internat. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access \u2013 wireless, non smoking rooms, air conditioning, desk to ensure a restful night. Access to the hotel's hot tub, private beach, fitness center, sauna, golf course (on site) will further enhance your satisfying stay. Friendly staff, great facilities and close proximity to all that Shanghai has to offer are three great reasons you should stay at Everbright Convention & Exhibition Centre Internat.",
+      "description": "Everbright Convention & Exhibition Centre Internat is perfectly located for both business and leisure guests in Shanghai. Both business travelers and tourists can enjoy the hotel's facilities and services. Service-minded staff will welcome and guide you at the Everbright Convention & Exhibition Centre Internat. Designed for comfort, selected guestrooms offer television LCD/plasma screen, internet access – wireless, non smoking rooms, air conditioning, desk to ensure a restful night. Access to the hotel's hot tub, private beach, fitness center, sauna, golf course (on site) will further enhance your satisfying stay. Friendly staff, great facilities and close proximity to all that Shanghai has to offer are three great reasons you should stay at Everbright Convention & Exhibition Centre Internat.",
       "info": "No chain in China with 211 review(s).",
       "starCount": 4,
       "rating": 6.4,
@@ -1711,7 +1711,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -1759,13 +1759,13 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 4
+          "guestCount": 2
         }
       ]
     },
     {
       "id": "hotel-124",
-      "name": "Corinthia Hotel St. George\u2019s Bay",
+      "name": "Corinthia Hotel St. George’s Bay",
       "city": "St. Julian's",
       "address": "St. George`s Bay, St. Julian's, Malta, Malta",
       "description": "The 5-star Corinthia Hotel St. George's Bay offers comfort and convenience whether you're on business or holiday in St. Julian's. The hotel offers a high standard of service and amenities to suit the individual needs of all travelers. Free Wi-Fi in all rooms, 24-hour front desk, express check-in/check-out, luggage storage, Wi-Fi in public areas are just some of the facilities on offer. Each guestroom is elegantly furnished and equipped with handy amenities. The hotel offers various recreational opportunities. Corinthia Hotel St. George's Bay combines warm hospitality with a lovely ambiance to make your stay in St. Julian's unforgettable.",
@@ -1840,7 +1840,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Suite",
@@ -1897,7 +1897,7 @@ window.UploadedHotelSeed = {
       "name": "Grand Prince Hotel Shin Takanawa",
       "city": "Tokyo",
       "address": "3-13-1 Takanawa, Minato-ku, Tokyo, Tokyo, Japan",
-      "description": "The 4-star Grand Prince Hotel New Takanawa offers comfort and convenience whether you're on business or holiday in Tokyo. The hotel offers guests a range of services and amenities designed to provide comfort and convenience. 24-hour room service, free Wi-Fi in all rooms, 24-hour security, chapel, shrine are just some of the facilities on offer. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find television LCD/plasma screen, internet access \u2013 wireless (complimentary), non smoking rooms, air conditioning, heating. Enjoy the hotel's recreational facilities, including hot tub, fitness center, sauna, spa, before retiring to your room for a well-deserved rest. Convenience and comfort makes Grand Prince Hotel New Takanawa the perfect choice for your stay in Tokyo.",
+      "description": "The 4-star Grand Prince Hotel New Takanawa offers comfort and convenience whether you're on business or holiday in Tokyo. The hotel offers guests a range of services and amenities designed to provide comfort and convenience. 24-hour room service, free Wi-Fi in all rooms, 24-hour security, chapel, shrine are just some of the facilities on offer. Guestrooms are fitted with all the amenities you need for a good night's sleep. In some of the rooms, guests can find television LCD/plasma screen, internet access – wireless (complimentary), non smoking rooms, air conditioning, heating. Enjoy the hotel's recreational facilities, including hot tub, fitness center, sauna, spa, before retiring to your room for a well-deserved rest. Convenience and comfort makes Grand Prince Hotel New Takanawa the perfect choice for your stay in Tokyo.",
       "info": "Prince Hotels in Japan with 1151 review(s).",
       "starCount": 4,
       "rating": 8.3,
@@ -2007,12 +2007,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Suite",
