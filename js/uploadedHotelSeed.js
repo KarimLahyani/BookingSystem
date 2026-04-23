@@ -34,12 +34,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 1
+          "guestCount": 2
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -72,7 +72,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
@@ -82,7 +82,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -115,12 +115,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
           "multiplier": 1.1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Comfort Room",
@@ -158,17 +158,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -201,7 +201,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
@@ -211,7 +211,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -244,17 +244,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 1
+          "guestCount": 2
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Suite",
           "multiplier": 1.45,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -287,12 +287,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
           "multiplier": 1.1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Comfort Room",
@@ -330,12 +330,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 1
+          "guestCount": 2
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Suite",
@@ -416,17 +416,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 1
+          "guestCount": 3
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -459,7 +459,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -507,12 +507,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 1
+          "guestCount": 3
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -545,7 +545,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -593,12 +593,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -636,12 +636,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 1
+          "guestCount": 3
         },
         {
           "name": "Suite",
           "multiplier": 1.45,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -674,7 +674,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -684,7 +684,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 2
+          "guestCount": 1
         }
       ]
     },
@@ -717,12 +717,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -760,7 +760,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -813,7 +813,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -856,7 +856,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -889,7 +889,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -899,7 +899,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 2
+          "guestCount": 1
         }
       ]
     },
@@ -937,12 +937,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 1
+          "guestCount": 3
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -975,7 +975,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -1066,7 +1066,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 1
+          "guestCount": 2
         },
         {
           "name": "Suite",
@@ -1104,7 +1104,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
@@ -1114,7 +1114,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1152,12 +1152,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1190,17 +1190,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Suite",
           "multiplier": 1.45,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1233,7 +1233,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
@@ -1243,7 +1243,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Suite",
           "multiplier": 1.45,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1281,7 +1281,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -1319,17 +1319,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
           "multiplier": 1.1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 2
+          "guestCount": 1
         }
       ]
     },
@@ -1367,7 +1367,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 1
+          "guestCount": 2
         },
         {
           "name": "Suite",
@@ -1405,17 +1405,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 1
+          "guestCount": 2
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1448,7 +1448,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -1491,17 +1491,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1534,7 +1534,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -1544,7 +1544,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Comfort Room",
           "multiplier": 1.22,
-          "guestCount": 2
+          "guestCount": 1
         }
       ]
     },
@@ -1577,17 +1577,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 1
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 1
+          "guestCount": 2
         },
         {
           "name": "Suite",
           "multiplier": 1.45,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1620,17 +1620,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1668,12 +1668,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1706,7 +1706,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
@@ -1749,7 +1749,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Economy Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Standard Room",
@@ -1792,12 +1792,12 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Suite",
@@ -1835,17 +1835,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Executive Room",
           "multiplier": 1.2,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Suite",
           "multiplier": 1.45,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1883,7 +1883,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
@@ -1931,7 +1931,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -1964,17 +1964,17 @@ window.UploadedHotelSeed = {
         {
           "name": "Standard Room",
           "multiplier": 1,
-          "guestCount": 2
+          "guestCount": 1
         },
         {
           "name": "Superior Room",
           "multiplier": 1.15,
-          "guestCount": 2
+          "guestCount": 3
         },
         {
           "name": "Family Room",
           "multiplier": 1.3,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     },
@@ -2007,7 +2007,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Deluxe Room",
           "multiplier": 1,
-          "guestCount": 3
+          "guestCount": 2
         },
         {
           "name": "Executive Room",
@@ -2017,7 +2017,7 @@ window.UploadedHotelSeed = {
         {
           "name": "Suite",
           "multiplier": 1.45,
-          "guestCount": 4
+          "guestCount": 3
         }
       ]
     }
