@@ -111,13 +111,24 @@
           <p>${formatCurrency(Math.round(hotel.pricePerNight * roomType.multiplier))}</p>
         </td>
         <td class="text-center">
-          <select class="form-select booking-room-count" data-base-price="${Math.round(hotel.pricePerNight * roomType.multiplier)}" data-price="${totalPrice}" id="room-count-${index}">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <div class="w-100">
+              <label class="small text-muted mb-1 d-block text-start">Rooms</label>
+              <select class="form-select form-select-sm booking-room-count" data-base-price="${Math.round(hotel.pricePerNight * roomType.multiplier)}" data-max-guests="${roomType.guestCount}" data-price="${totalPrice}" id="room-count-${index}">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="w-100 guest-select-wrapper d-none">
+              <label class="small text-muted mb-1 d-block text-start">Guests</label>
+              <select class="form-select form-select-sm booking-guest-count" id="guest-count-${index}">
+                <!-- Options populated dynamically -->
+              </select>
+            </div>
+          </div>
         </td>
           ${summaryCol}
       </tr>
@@ -131,7 +142,7 @@
             <th class="text-center room-reservation-th" style="width: 10%;">Conditions</th>
             <th class="text-center room-reservation-th" style="width: 10%;">Guests</th>
             <th class="text-center room-reservation-th" style="width: 15%;">Price per Night</th>
-            <th class="text-center room-reservation-th" style="width: 5%;">Select Rooms</th>
+            <th class="text-center room-reservation-th" style="width: 20%;">Select Rooms & Guests</th>
             <th class="text-center room-reservation-th" style="width: 20%;">Summary</th>
           </tr>
           ${roomRows}
@@ -205,14 +216,31 @@
         let totalGuests = 0;
 
         selects.forEach(select => {
-            const count = parseInt(select.value);
-            if (count > 0) {
+            const row = select.closest("tr");
+            const roomCount = parseInt(select.value);
+            const guestSelectWrapper = row.querySelector(".guest-select-wrapper");
+            const guestSelect = row.querySelector(".booking-guest-count");
+
+            if (roomCount > 0) {
+                guestSelectWrapper.classList.remove("d-none");
+                
+                // Update guest options if they haven't been updated for this room count
+                const maxGuests = parseInt(select.dataset.maxGuests) * roomCount;
+                const currentVal = parseInt(guestSelect.value) || roomCount; // Default to at least 1 guest per room
+                
+                let options = "";
+                for (let i = 1; i <= maxGuests; i++) {
+                    options += `<option value="${i}" ${i === currentVal ? "selected" : ""}>${i} Guest${i > 1 ? "s" : ""}</option>`;
+                }
+                guestSelect.innerHTML = options;
+
                 const price = parseInt(select.dataset.price);
-                const guestCountRow = select.closest("tr").querySelector(".text-center p");
-                const guestCount = guestCountRow ? parseInt(guestCountRow.innerText.split(" ")[0]) : 0;
-                sumPrice += price * count;
-                sumRooms += count;
-                totalGuests += guestCount * count;
+                sumPrice += price * roomCount;
+                sumRooms += roomCount;
+                totalGuests += parseInt(guestSelect.value);
+            } else {
+                guestSelectWrapper.classList.add("d-none");
+                guestSelect.innerHTML = "";
             }
         });
 
@@ -222,6 +250,10 @@
     }
 
     selects.forEach(select => {
+        select.addEventListener("change", updateTotal);
+    });
+
+    section.querySelectorAll(".booking-guest-count").forEach(select => {
         select.addEventListener("change", updateTotal);
     });
 
@@ -244,7 +276,7 @@
                 return {
                     roomType: select.closest("tr").querySelector(".room-info h3").innerText,
                     count,
-                    guestCount: parseInt(select.closest("tr").querySelector(".text-center p").innerText.split(" ")[0])
+                    guestCount: parseInt(select.closest("tr").querySelector(".booking-guest-count").value)
                 };
             }
             return null;
