@@ -12,14 +12,14 @@
   --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
-/* --- Base --- */
+/* --- Base Styles --- */
 body {
   background: var(--bg-main);
   color: var(--text-main);
   overflow-y: scroll;
 }
 
-/* --- Layout --- */
+/* --- Layout & Header --- */
 .hero-section {
   background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
 }
@@ -28,7 +28,7 @@ header.bg-primary {
   background-color: var(--brand-primary) !important;
 }
 
-/* --- Search Bar --- */
+/* --- Search Interface --- */
 .search-bar-shell {
   display: grid;
   grid-template-columns: 64px minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, 1fr) 180px;
@@ -181,7 +181,6 @@ header.bg-primary {
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -223,7 +222,7 @@ header.bg-primary {
   color: var(--text-muted);
 }
 
-/* --- Cards --- */
+/* --- Cards & Visuals --- */
 .hotel-card,
 .offer-card,
 .popular-card,
@@ -287,7 +286,7 @@ header.bg-primary {
   color: #b91c1c;
 }
 
-/* --- Carousel --- */
+/* --- Carousel Components --- */
 .simple-carousel {
   position: relative;
 }
@@ -324,7 +323,7 @@ header.bg-primary {
   filter: invert(21%) sepia(15%) saturate(446%) hue-rotate(178deg) brightness(94%) contrast(89%);
 }
 
-/* --- Hotel Details --- */
+/* --- Hotel Details & Gallery --- */
 .hotel-strip-image {
   width: 100%;
   height: 140px;
@@ -377,7 +376,7 @@ header.bg-primary {
   color: #4b5563;
 }
 
-/* --- Booking Table --- */
+/* --- Booking Interface --- */
 .booking-room-image {
   width: 100%;
   height: 120px;
@@ -385,10 +384,6 @@ header.bg-primary {
   border-radius: 0.5rem;
   display: block;
   cursor: pointer;
-}
-
-.booking-table-wrapper {
-  background: var(--white);
 }
 
 .room-selection-table {
@@ -436,7 +431,7 @@ header.bg-primary {
   background-color: var(--white);
 }
 
-/* --- Summary Card --- */
+/* --- Cart Summary --- */
 .cart-summary-card {
   background: var(--bg-main);
   border: 1px solid #e2e8f0;
@@ -515,7 +510,7 @@ header.bg-primary {
   display: block;
 }
 
-/* --- Payment --- */
+/* --- Payment Form --- */
 .payment-form {
   max-width: 600px;
   margin: 0 auto;
@@ -531,10 +526,6 @@ header.bg-primary {
   font-weight: 500;
 }
 
-.iti {
-  width: 100%;
-}
-
 .payment-form .btn-primary {
   width: 100%;
   padding: 10px;
@@ -548,7 +539,7 @@ header.bg-primary {
   border-color: var(--brand-primary-hover);
 }
 
-/* --- Lightbox --- */
+/* --- Lightbox Modal --- */
 #imageLightboxModal .modal-dialog {
   max-width: 95vw;
   margin: 10px auto;
@@ -640,27 +631,22 @@ header.bg-primary {
   font-size: 1rem;
 }
 
-/* --- Responsive --- */
+/* --- Responsive Layouts --- */
 @media (max-width: 767.98px) {
-
   .hotel-hero-image,
   .carousel-image {
     height: 260px;
   }
-
   .hotel-strip-image {
     height: 110px;
   }
-
   .booking-room-image {
     height: 120px;
   }
-
   .simple-carousel .carousel-control-prev,
   .simple-carousel .carousel-control-next {
     display: none;
   }
-
   .room-selection-table {
     display: block;
     overflow-x: auto;
@@ -674,25 +660,20 @@ header.bg-primary {
     border-radius: 20px;
     align-items: stretch;
   }
-
   .search-bar-icon-column {
     display: none;
   }
-
   .search-bar-group {
     border-left: 0 !important;
     border-top: 1px solid var(--border-light);
     padding: 1.25rem 1.5rem;
   }
-
   .search-bar-group:first-of-type {
     border-top: 0;
   }
-
   .search-bar-button-column {
     padding: 1rem 1.5rem 1.5rem;
   }
-
   .search-bar-button {
     height: 56px;
     min-height: auto;
@@ -704,11 +685,9 @@ header.bg-primary {
   #lightboxPrevBtn {
     left: 10px;
   }
-
   #lightboxNextBtn {
     right: 10px;
   }
-
   #imageLightboxModal .modal-dialog {
     max-width: 98vw;
   }

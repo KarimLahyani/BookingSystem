@@ -6,11 +6,8 @@
     currentSearch: "currentSearch",
     searchResults: "searchResults",
     selectedHotel: "selectedHotel",
-    reservations: "reservations",
-    datasetVersion: "datasetVersion"
+    reservations: "reservations"
   };
-
-  const DATASET_VERSION = "real-collected-data-v3";
 
   function buildPopularSearches(hotelList) {
     if (!hotelList || !hotelList.length) return [];
@@ -40,24 +37,68 @@
           imageUrl: hotelsInCity[0].mainImage
         };
       })
-      .slice(0, 10);
+      .slice(0, 12);
   }
 
-  function buildDeals(hotelList) {
-    if (!hotelList || !hotelList.length) return [];
-    return hotelList.slice(0, 10).map(hotel => ({
-      title: `Special Deal: ${hotel.name}`,
-      details: `${hotel.description ? hotel.description.substring(0, 100) : "Enjoy a comfortable stay at this top-rated hotel."}...`,
-      chip: "Best Value",
-      badge: "Limited Offer",
-      imageUrl: hotel.mainImage,
-      hotelId: hotel.id
-    }));
+  function buildDeals() {
+    return [
+      {
+        title: "Romantic Escape",
+        details: "Luxury suite, candlelit dinner, and late checkout for the perfect couple's retreat.",
+        chip: "Romantic",
+        badge: "Hot Deal",
+        imageUrl: "images/romantic.png",
+        hotelId: "tr-01"
+      },
+      {
+        title: "Family Fun Adventure",
+        details: "Free kids' club, water park access, and spacious family rooms with all-inclusive meals.",
+        chip: "Family",
+        badge: "Bestseller",
+        imageUrl: "images/family.png",
+        hotelId: "tr-08"
+      },
+      {
+        title: "Wellness & Spa Retreat",
+        details: "Unlimited spa access, yoga sessions, and organic breakfast to rejuvenate your soul.",
+        chip: "Wellness",
+        badge: "Top Rated",
+        imageUrl: "images/spa.png",
+        hotelId: "tr-07"
+      },
+      {
+        title: "City Explorer Bundle",
+        details: "Prime city location, free metro pass, and guided walking tour included in your stay.",
+        chip: "Urban",
+        badge: "New",
+        imageUrl: "images/city.png",
+        hotelId: "tr-06"
+      }
+    ];
   }
 
   function getRawHotels() {
     if (window.UploadedHotelSeed && window.UploadedHotelSeed.hotels) {
-      return window.UploadedHotelSeed.hotels;
+      const hotels = window.UploadedHotelSeed.hotels;
+      const apiKey = (window.HotelAppConfig && window.HotelAppConfig.googleMapsApiKey) || "";
+
+      if (!apiKey) return hotels;
+
+      hotels.forEach(hotel => {
+        if (hotel.mainImage && hotel.mainImage.includes("googleapis.com") && !hotel.mainImage.includes("&key=")) {
+          hotel.mainImage += `&key=${apiKey}`;
+        }
+        if (hotel.images) {
+          hotel.images = hotel.images.map(img => {
+            if (img.includes("googleapis.com") && !img.includes("&key=")) {
+              return img + `&key=${apiKey}`;
+            }
+            return img;
+          });
+        }
+      });
+
+      return hotels;
     }
     return [];
   }
@@ -73,21 +114,13 @@
   }
 
   function seedSessionData() {
-    const existingVersion = sessionStorage.getItem(STORAGE_KEYS.datasetVersion);
     const hotels = getRawHotels();
-    const deals = buildDeals(hotels);
+    const deals = buildDeals();
     const popularSearches = buildPopularSearches(hotels);
 
-    if (existingVersion !== DATASET_VERSION) {
-      console.log("HotelApp: Seeding version", DATASET_VERSION);
-      sessionStorage.setItem(STORAGE_KEYS.deals, JSON.stringify(deals));
-      sessionStorage.setItem(STORAGE_KEYS.popularSearches, JSON.stringify(popularSearches));
-      sessionStorage.removeItem(STORAGE_KEYS.currentSearch);
-      sessionStorage.removeItem(STORAGE_KEYS.searchResults);
-      sessionStorage.removeItem(STORAGE_KEYS.selectedHotel);
-      sessionStorage.setItem(STORAGE_KEYS.datasetVersion, DATASET_VERSION);
-    }
-
+    sessionStorage.setItem(STORAGE_KEYS.deals, JSON.stringify(deals));
+    sessionStorage.setItem(STORAGE_KEYS.popularSearches, JSON.stringify(popularSearches));
+    
     setIfMissing(STORAGE_KEYS.reservations, []);
   }
 

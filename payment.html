@@ -6,8 +6,6 @@
   <title>StaySimple | Payment</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="bg-primary text-white">
@@ -40,7 +38,6 @@
               <h2 class="h5 mb-3">Guest and Payment Information</h2>
               <form id="paymentForm" class="needs-validation" novalidate>
                 <div class="row g-3">
-                  <!-- Reservation Information -->
                   <h3>Your Reservation Information</h3>
                   <div class="col-md-6">
                     <label for="firstName" class="form-label">Your Name *</label>
@@ -64,7 +61,6 @@
                       <div class="invalid-feedback">Please enter a valid phone number (10-15 digits).</div>
                     </div>
                   </div>
-                  <!-- Payment Options -->
                   <h3>Payment Options</h3>
                   <div class="col-12 mb-3">
                     <label class="form-label d-block">Payment Method *</label>
@@ -110,9 +106,10 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/uploadedHotelSeed.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/payment.js"></script>
+  <script src="js/shared/config.js"></script>
+  <script src="js/shared/hotelDatabase.js"></script>
+  <script src="js/shared/data.js"></script>
+  <script src="js/shared/common.js"></script>
+  <script src="js/pages/payment.js"></script>
 </body>
 </html>

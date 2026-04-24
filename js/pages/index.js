@@ -1,6 +1,6 @@
 (function () {
   const { STORAGE_KEYS, getDeals, getPopularSearches, getDefaultSearchState, seedSessionData } = window.HotelAppData;
-  const { attachSearchFormHandler, buildSlides, formatCurrency, getCurrentSearch, getSearchResults, saveCurrentSearch, saveSearchResults, saveSelectedHotel, searchHotels } = window.HotelAppCommon;
+  const { attachSearchFormHandler, buildSlides, formatCurrency, getCurrentSearch, getSearchResults, saveCurrentSearch, saveSearchResults, saveSelectedHotel, searchHotels, renderHotelCard } = window.HotelAppCommon;
 
   function renderDealsSection() {
     const heading = document.getElementById("dynamicSectionHeading");
@@ -60,14 +60,7 @@
         <div class="row g-3">
           ${slideItems.map((hotel) => `
             <div class="col-12 col-sm-6 col-lg">
-              <button class="card hotel-card clickable-card shadow-sm border-0 h-100 text-start w-100 search-preview-button p-0 overflow-hidden" type="button" data-hotel-id="${hotel.id}">
-                <img src="${hotel.mainImage}" class="card-img-top" alt="${hotel.name}">
-                <div class="card-body">
-                  <h3 class="h6 card-title">${hotel.name}</h3>
-                  <p class="mb-1 text-secondary small">${hotel.city}</p>
-                  <p class="mb-0 fw-semibold">${formatCurrency(hotel.pricePerNight)} / night</p>
-                </div>
-              </button>
+              ${renderHotelCard(hotel, { className: "search-preview-button" })}
             </div>
           `).join("")}
         </div>
@@ -182,7 +175,6 @@
     const currentSearch = getCurrentSearch();
     const defaultSearchState = getDefaultSearchState();
     
-    // If no search state exists, use default
     if (!currentSearch || !currentSearch.searchText) {
         saveCurrentSearch(defaultSearchState);
     }

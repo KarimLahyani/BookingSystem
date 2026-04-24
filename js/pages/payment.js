@@ -38,7 +38,6 @@
       event.preventDefault();
       form.classList.add("was-validated");
 
-      // Validate Expiry Date
       const expiryInput = form.expiryDate;
       const expiryValue = expiryInput.value;
       const isExpired = (value) => {
@@ -123,7 +122,6 @@
 
     handleSubmit(selectedHotel);
 
-    // Restrict input to numbers only for specific fields
     const numberFields = ["cardNumber", "cvc", "phone"];
     numberFields.forEach((fieldId) => {
       const field = document.getElementById(fieldId);
@@ -134,7 +132,6 @@
       }
     });
 
-    // Format Expiry Date input automatically
     const expiryInput = document.getElementById("expiryDate");
     if (expiryInput) {
       expiryInput.addEventListener("input", function (e) {

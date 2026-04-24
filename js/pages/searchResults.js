@@ -31,16 +31,7 @@
       <div class="row g-4">
         ${sortedResults.map((hotel) => `
           <div class="col-12 col-sm-6 col-lg-3">
-            <button class="card hotel-card clickable-card shadow-sm border-0 text-start w-100 hotel-result-button p-0 overflow-hidden" type="button" data-hotel-id="${hotel.id}">
-              <img src="${hotel.mainImage}" class="card-img-top" alt="${hotel.name}">
-              <div class="card-body">
-                <h3 class="h5 card-title">${hotel.name}</h3>
-                <p class="mb-1 text-secondary">${hotel.city}</p>
-                <p class="mb-1 small text-secondary">${hotel.address}</p>
-                <p class="mb-1">Stars: ${hotel.starCount} | Rating: ${hotel.rating}</p>
-                <p class="mb-0 fw-semibold">${formatCurrency(hotel.pricePerNight)} / night</p>
-              </div>
-            </button>
+            ${window.HotelAppCommon.renderHotelCard(hotel, { isSearchPage: true })}
           </div>
         `).join("")}
       </div>

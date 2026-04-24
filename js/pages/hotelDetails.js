@@ -1,17 +1,9 @@
 (function () {
   const { seedSessionData } = window.HotelAppData;
-  const { calculateNightCount, calculateTotalAmount, formatCurrency, getCurrentSearch, getSelectedHotel, saveSelectedHotel } = window.HotelAppCommon;
+  const { calculateNightCount, calculateTotalAmount, formatCurrency, getCurrentSearch, getSelectedHotel, saveSelectedHotel, buildSlides } = window.HotelAppCommon;
 
   let currentImageIndex = 0;
   let hotelImages = [];
-
-  function buildSlides(items, chunkSize) {
-    const slides = [];
-    for (let index = 0; index < items.length; index += chunkSize) {
-      slides.push(items.slice(index, index + chunkSize));
-    }
-    return slides;
-  }
 
   function escapeHtml(value) {
     return String(value)
@@ -224,9 +216,8 @@
             if (roomCount > 0) {
                 guestSelectWrapper.classList.remove("d-none");
                 
-                // Update guest options if they haven't been updated for this room count
                 const maxGuests = parseInt(select.dataset.maxGuests) * roomCount;
-                const currentVal = parseInt(guestSelect.value) || roomCount; // Default to at least 1 guest per room
+                const currentVal = parseInt(guestSelect.value) || roomCount;
                 
                 let options = "";
                 for (let i = 1; i <= maxGuests; i++) {
@@ -257,7 +248,6 @@
         select.addEventListener("change", updateTotal);
     });
 
-    // Auto-select based on search criteria
     const reqRooms = parseInt(searchData.roomCount) || 0;
     const reqGuests = parseInt(searchData.guestCount) || 0;
 
@@ -495,7 +485,6 @@
         updateLightboxUI();
     });
 
-    // Keyboard navigation
     document.addEventListener("keydown", function(e) {
         const modal = document.getElementById("imageLightboxModal");
         if (!modal.classList.contains("show")) return;

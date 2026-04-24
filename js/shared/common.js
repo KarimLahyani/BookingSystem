@@ -72,6 +72,37 @@
     return slides;
   }
 
+  function renderHotelCard(hotel, options = {}) {
+    const { isSearchPage = false, className = "" } = options;
+    const priceText = formatCurrency(hotel.pricePerNight);
+    
+    if (isSearchPage) {
+      return `
+        <button class="card hotel-card clickable-card shadow-sm border-0 text-start w-100 hotel-result-button p-0 overflow-hidden ${className}" type="button" data-hotel-id="${hotel.id}">
+          <img src="${hotel.mainImage}" class="card-img-top" alt="${hotel.name}">
+          <div class="card-body">
+            <h3 class="h5 card-title">${hotel.name}</h3>
+            <p class="mb-1 text-secondary">${hotel.city}</p>
+            <p class="mb-1 small text-secondary">${hotel.address}</p>
+            <p class="mb-1 small text-muted">Stars: ${hotel.starCount} | Rating: ${hotel.rating}</p>
+            <p class="mb-0 fw-semibold text-primary">${priceText} / night</p>
+          </div>
+        </button>
+      `;
+    }
+    
+    return `
+      <button class="card hotel-card clickable-card shadow-sm border-0 h-100 text-start w-100 hotel-preview-button p-0 overflow-hidden ${className}" type="button" data-hotel-id="${hotel.id}">
+        <img src="${hotel.mainImage}" class="card-img-top" alt="${hotel.name}">
+        <div class="card-body">
+          <h3 class="h6 card-title mb-1">${hotel.name}</h3>
+          <p class="mb-1 text-secondary small">${hotel.city}</p>
+          <p class="mb-0 fw-semibold text-primary small">${priceText} / night</p>
+        </div>
+      </button>
+    `;
+  }
+
   function searchHotels(searchText) {
     const searchValue = searchText.trim().toLowerCase();
     return window.HotelAppData
@@ -170,7 +201,7 @@
       };
 
       input.addEventListener("input", toggleClearBtn);
-      toggleClearBtn(); // Initial check
+      toggleClearBtn();
 
       clearBtn.addEventListener("click", function() {
         input.value = "";
@@ -213,6 +244,7 @@
     calculateNightCount,
     calculateTotalAmount,
     formatCurrency,
+    renderHotelCard,
     setSearchDateConstraints,
     populateSearchForm,
     readSearchForm,
