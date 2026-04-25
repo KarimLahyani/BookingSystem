@@ -212,16 +212,6 @@ header.bg-primary {
   background-color: var(--brand-primary-hover);
   border-color: var(--brand-primary-hover);
 }
-
-.search-bar-shell .invalid-feedback {
-  display: none;
-}
-
-.search-bar-shell .search-bar-input:invalid,
-.search-bar-shell .search-bar-select:invalid {
-  color: var(--text-muted);
-}
-
 /* --- Cards & Visuals --- */
 .hotel-card,
 .offer-card,
